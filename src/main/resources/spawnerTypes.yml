@@ -1,9 +1,0 @@
-#Usage:
-#NameOfYourType:
-#  timeBetweenSpawns: 30 <- Seconds between items appearing
-#  amount: 1 <- Amount of items which should appear
-#  timeBetweenTiers: 30 <-  Time between upgrading the spawner tiers, 0 to disable
-#  maxTier: 10 <- Maximum tier of the spawner, 1 to disable
-#  resource: "DIAMOND" <- Material name of the resource which should appear
-#  headBlock: "DIAMOND_BLOCK" <- Material name of the block to use as disaplay
-#  spawnerName: "&bDiamond Spawner" <- Name of the spawner which should appear. Supports Hex codes & Color Codes
