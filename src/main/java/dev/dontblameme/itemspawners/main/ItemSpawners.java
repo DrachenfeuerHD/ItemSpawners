@@ -6,7 +6,7 @@ import dev.dontblameme.itemspawners.commands.GetSpawners;
 import dev.dontblameme.itemspawners.commands.SetSpawner;
 import dev.dontblameme.itemspawners.spawner.SpawnerManager;
 import dev.dontblameme.itemspawners.spawner.SpawnerTypesManager;
-import dev.dontblameme.itemspawners.tabcomplete.SetSpawnerCompletor;
+import dev.dontblameme.itemspawners.tabcomplete.CustomTabCompletor;
 import dev.dontblameme.utilsapi.config.customconfig.CustomConfig;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,10 +25,10 @@ public final class ItemSpawners extends JavaPlugin {
         getCommand("DeleteSpawner").setExecutor(new DeleteSpawner());
         getCommand("ConfigReload").setExecutor(new ConfigReload());
 
-        getCommand("SetSpawner").setTabCompleter(new SetSpawnerCompletor());
-        getCommand("GetSpawners").setTabCompleter(new SetSpawnerCompletor());
-        getCommand("DeleteSpawner").setTabCompleter(new SetSpawnerCompletor());
-        getCommand("ConfigReload").setTabCompleter(new SetSpawnerCompletor());
+        getCommand("SetSpawner").setTabCompleter(new CustomTabCompletor());
+        getCommand("GetSpawners").setTabCompleter(new CustomTabCompletor());
+        getCommand("DeleteSpawner").setTabCompleter(new CustomTabCompletor());
+        getCommand("ConfigReload").setTabCompleter(new CustomTabCompletor());
 
         SpawnerTypesManager.readSpawnersTypesFromFile(spawnerTypes);
         SpawnerManager.readSpawnersFromFile(spawners);
