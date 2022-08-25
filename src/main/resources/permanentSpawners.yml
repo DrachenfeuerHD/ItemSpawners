@@ -1,0 +1,6 @@
+#Usage:
+#NameOfYourType:
+#  world: BukkitWorldName
+#  x: xpos
+#  y: ypos
+#  z: zpos
